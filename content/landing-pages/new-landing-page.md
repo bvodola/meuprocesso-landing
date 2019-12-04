@@ -175,8 +175,12 @@ sections:
       orçamento.
     type: textEditor
   - buttonLink: 'https://youthful-davinci-a51b66.netlify.com/chat'
-    buttonText: Quero verificar
+    buttonText: Falar com um advogado
+    description: >-
+      Se restou qualquer dúvida, fale conosco agora mesmo por WhatsApp e com
+      certeza podemos te ajudar a resolver sua questão.
     features: []
+    header: Ainda tem alguma dúvida?
     numberedFeatures: false
     type: features
 ---
