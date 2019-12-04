@@ -13,9 +13,9 @@ sections:
             color: #46648d;
           }
       }
-    desktopImage: /img/plane-bg.jpg
+    desktopImage: /img/hero002.jpg
     header: |-
-      # Seja indenizado pelo seu vôo
+      # Advogado de divórcio
 
       Verifique em um minuto como nós podemos ajudar você
     mobileImage: /img/airplane-ticket.png
