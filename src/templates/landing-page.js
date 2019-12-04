@@ -56,7 +56,7 @@ export default props => {
   return (
     <Layout>
       <Nav
-        logo={"/img/pa-logo.png"}
+        logo={"/img/meu-processo-logo.png"}
         phone={"(11) 99469-5279"}
         whatsapp={"11994695279"}
       />
