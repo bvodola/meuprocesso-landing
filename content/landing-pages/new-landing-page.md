@@ -7,6 +7,7 @@ sections:
     buttonText: Falar com um advogado
     customCSS: |-
       border-bottom: none;
+      background-size: cover;
 
       .jumbotron-content {
         h1{
