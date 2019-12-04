@@ -4,7 +4,7 @@ title: New landing page
 sections:
   - buttonColor: '#ec9314'
     buttonLink: 'https://youthful-davinci-a51b66.netlify.com/chat/'
-    buttonText: Quero verificar agora
+    buttonText: Falar com um advogado
     customCSS: |-
       border-bottom: none;
 
@@ -17,13 +17,13 @@ sections:
     header: |-
       # Advogado de divórcio
 
-      Verifique em um minuto como nós podemos ajudar você
+      Fale agora mesmo com um advogado especialista e saiba como podemos ajudar
     mobileImage: /img/airplane-ticket.png
     type: jumbotron
   - bgColor: '#fff'
     buttonLink: 'http://www.google.com'
-    buttonText: Quero ser indenizado
-    description: São apenas 3 passos para você obter a sua indenização!
+    buttonText: Quero falar com um advogado
+    description: Resolvemos seu divórcio em apenas 3 passos
     feature:
       - description: >-
           Com alguns cliques, identificamos se você tem direito a uma
@@ -38,17 +38,22 @@ sections:
         title: Receba a indenização
     features:
       - description: >-
-          Com apenas alguns cliques, identificamos se você tem direito a uma
-          indenização.
-        image: /img/airplane-ticket.png
-        title: Verifique seus direitos
-      - description: 'Cadastre o seu pedido online, sem sair de casa, em apenas 5 minutos.'
-        image: /img/smartphone.png
-        title: Reivindique online
-      - description: Nós cuidamos de toda a burocracia e você recebe o seu dinheiro.
-        image: /img/money-bag.png
-        title: Receba a indenização
-    header: Como a Processos Aéreos funciona?
+          Somos especialistas em processos de divórcio e com certeza
+          conseguiremos resolver sua questão.
+        image: /img/lawyer.png
+        title: Fale com nossos advogados
+      - description: >-
+          Cuidamos de toda documentação e processo para que você não tenha
+          nenhum trabalho
+        image: /img/lawsuit.png
+        title: Daremos entrada em seu processo
+      - description: >-
+          Depois de falar conosco e entregar os documentos, apenas aguarde
+          tranquilamente a finalização do processo
+        image: /img/solved.png
+        title: Aguarde o processo finalizado
+    header: Como a MeuProcesso funciona?
+    imageHeight: 70px
     numberedFeatures: true
     type: features
   - bgColor: '#eee'
@@ -56,22 +61,27 @@ sections:
     buttonText: ''
     description: ''
     features:
-      - description: Voo Cancelado
-        image: /img/voo-cancelado.svg
-        title: ''
-      - description: Voo Atrasado
-        image: /img/voo-atrasado.svg
-        title: ''
-      - description: Conexão Perdida
-        image: /img/conexao-perdida.svg
-        title: ''
-      - description: Overbooking
-        image: /img/overbooking.svg
-        title: ''
-      - description: Bagagem Extraviada
-        image: /img/bagagem-extraviada.svg
-        title: ''
-    header: QUE PROBLEMAS PODEM DAR DIREITO A UMA INDENIZAÇÃO?
+      - description: >-
+          Damos todo auxílio para os casos em que o cartório pode ser feito em
+          cartório em até 24 horas.
+        image: /img/validation.png
+        title: Divórcio em cartório
+      - description: >-
+          Nos casos em que não existe acordo entre o casal, ou quando temos
+          filhos pequenos, daremos todo apoio do início ao fim do processo.
+        image: /img/hammer.png
+        title: Divórcio litigioso
+      - description: >-
+          Auxiliamos também em decisões judiciais relacionadas a guarda de
+          filhos, sempre pensando no bem-estar do menor.
+        image: /img/children.png
+        title: Guarda dos filhos
+      - description: >-
+          Analisamos seu caso individualmente e ajudamos a definir qual o melhor
+          caminho a tomar em relação à divisão de bens.
+        image: /img/asset.png
+        title: Divisão de bens
+    header: Descubra como a MeuProcesso pode ajudar você
     imageHeight: 70px
     numberedFeatures: false
     type: features
@@ -85,56 +95,84 @@ sections:
     mdPadding: 20px 10%
     type: grid
   - textContent: >-
-      **Se eu tiver ganho a passagem, de presente por exemplo, ainda assim terei
-      direito a uma indenização?**
+      **Quero me divorciar. Qual é o primeiro passo?**\
+
+      Primeiramente, deve-se avaliar bem a decisão do divórcio, que nunca é
+      fácil. Depois de avaliada a decisão, procure um advogado de confiança e
+      fale com ele sobre sua decisão.
 
 
-      Sim. A indenização, desde que preenchidos os requisitos legais, é devida
-      ao(à) passageiro(a) que enfrentou o problema que, no caso de uma viagem
-      dada de presente, não será a mesma pessoa que comprou a passagem aérea.
+      **Onde dar entrada no divórcio?**\
+
+      Se o casal está de acordo - o que chamamos de divórcio consensual - pode
+      ser dada entrada em qualquer cartório em alguns casos. Caso não haja
+      acordo - divórcio litigioso - deve ser dada entrada obrigatoriamente na
+      justiça.
 
 
-      **Como faço para saber o andamento da minha reclamação?**
+      **Posso me divorciar no cartório?**\
+
+      Depende. Se o casal estiver de acordo em relação ao divórcio e não tiverem
+      filhos menores, então o cartório poderá ser realizado em cartório.
 
 
-      Basta entrar conosco que te passaremos o andamento atual da sua
-      reclamação. Além disso, sempre que tivermos alguma atualização importante,
-      informaremos você sobre essa atualização.
+      **Sou obrigado a contratar um advogado para dar entrada no divórcio?**\
+
+      Sim. Mesmo nos divórcios feitos em cartório, é necessária a presença de um
+      advogado para realizar o processo.
 
 
-      **Qual o valor da indenização que terei direito de receber?**
+      **Quais os documentos necessários para dar entrada no divórcio?**\
+
+      Podem variar, mas em geral são os seguintes:
 
 
-      Como não existe um critério objetivo na lei, dependerá muito de cada
-      situação ocorrida. Mas a média de valores de indenizações por danos
-      moraisenvolvendo problemas em viagens aéreas está em torno de R$ 5.000,00
-      (cinco mil reais).
+      \* Certidão de casamento
+
+
+      \* Certidão de nascimento dos filhos (se houver)
+
+
+      \* Cópias do RG e CPF dos cônjuges.
+
+
+      \* Documentos dos bens móveis e imóveis adquiridos durante o casamento
     type: textEditor
   - textContent: >-
-      **Quanto tempo demora para eu receber o valor da indenização?**
+      **Quanto tempo dura o processo de divórcio?**\
+
+      No caso de um processo consensual feito em cartório, o processo dura cerca
+      de 24 horas. No caso de divórcio litigioso, a justiça decreta que não pode
+      durar mais de 3 meses.
 
 
-      A situação vivenciada por você poderá ser resolvida de forma amigável ou,
-      caso não seja possível, será necessário ingressar com uma ação judicial,
-      quando encaminharemos o caso para algum advogado ou escritório parceiro.Em
-      razão disto, não é possível precisarmos um tempo exato. Mas a média é de
-      que em até 01 (um) ano, você já receba o valor da sua indenização.
+      **Posso me divorciar mesmo se a outra parte não está de acordo?**\
+
+      Sim. Mas nesse caso trata-se de um divórcio litigioso e deve ser dada
+      entrada através da justiça.
 
 
-      **Como e quando que a Indenizando recebe?**
+      **Como é feita a divisão de bens?**\
+
+      Depende de qual regime de comunhão de bens escolhido pelo casal. O mais
+      comum é a Comunhão Parcial de Bens. Nesse caso, só entram na divisão bens
+      que foram adquiridos  após o casamento.
 
 
-      Nós somente recebemos quando você receber, sendo que nossa taxa é de 30%
-      (trinta) por cento sobre o valor final recebido por você.
+      **Com quem fica a guarda dos filhos?**\
+
+      Depende. Se o casal estiver de acordo, as coisas andam mais rapidamente. O
+      bem-estar do menor é sempre levado em conta. O caso mais comum é o de
+      guarda compartilhada, em que ambos têm direitos iguais sobre os filhos,
+      decidindo juntos sobre a criação.
 
 
-      **E o que acontece se eu não ganhar a ação? Terei que pagar alguma
-      coisa?**
+      **Quanto custa um divórcio?**\
 
-
-      Você não terá nenhum risco ao entregar seu caso aos nossos cuidados. E se
-      por algum motivo não conseguirmos sua indenização, você não terá nenhum
-      prejuízo financeiro.
+      O valor mínimo sugerido pela OAB/SP é de R$ 2.977,13 para o caso de
+      divórcio em cartório, além das custas do próprio cartório. Contudo, fale
+      conosco e com certeza podemos oferecer um proposta que cabe em seu
+      orçamento.
     type: textEditor
   - buttonLink: 'https://youthful-davinci-a51b66.netlify.com/chat'
     buttonText: Quero verificar
