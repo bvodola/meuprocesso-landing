@@ -1,6 +1,6 @@
 ---
 templateKey: landing-page
-title: New landing page
+title: Divórcio
 sections:
   - buttonColor: '#ec9314'
     buttonLink: 'https://youthful-davinci-a51b66.netlify.com/chat/'
@@ -95,14 +95,14 @@ sections:
     mdPadding: 20px 10%
     type: grid
   - textContent: >-
-      **Quero me divorciar. Qual é o primeiro passo?**\
+      **Quero me divorciar. Qual é o primeiro passo?**
 
       Primeiramente, deve-se avaliar bem a decisão do divórcio, que nunca é
       fácil. Depois de avaliada a decisão, procure um advogado de confiança e
       fale com ele sobre sua decisão.
 
 
-      **Onde dar entrada no divórcio?**\
+      **Onde dar entrada no divórcio?**
 
       Se o casal está de acordo - o que chamamos de divórcio consensual - pode
       ser dada entrada em qualquer cartório em alguns casos. Caso não haja
@@ -110,56 +110,53 @@ sections:
       justiça.
 
 
-      **Posso me divorciar no cartório?**\
+      **Posso me divorciar no cartório?**
 
       Depende. Se o casal estiver de acordo em relação ao divórcio e não tiverem
       filhos menores, então o cartório poderá ser realizado em cartório.
 
 
-      **Sou obrigado a contratar um advogado para dar entrada no divórcio?**\
+      **Sou obrigado a contratar um advogado para dar entrada no divórcio?**
 
       Sim. Mesmo nos divórcios feitos em cartório, é necessária a presença de um
       advogado para realizar o processo.
 
 
-      **Quais os documentos necessários para dar entrada no divórcio?**\
+      **Quais os documentos necessários para dar entrada no divórcio?**
 
       Podem variar, mas em geral são os seguintes:
 
 
-      \* Certidão de casamento
+      * Certidão de casamento
 
+      * Certidão de nascimento dos filhos (se houver)
 
-      \* Certidão de nascimento dos filhos (se houver)
+      * Cópias do RG e CPF dos cônjuges.
 
-
-      \* Cópias do RG e CPF dos cônjuges.
-
-
-      \* Documentos dos bens móveis e imóveis adquiridos durante o casamento
+      * Documentos dos bens móveis e imóveis adquiridos durante o casamento
     type: textEditor
   - textContent: >-
-      **Quanto tempo dura o processo de divórcio?**\
+      **Quanto tempo dura o processo de divórcio?**
 
       No caso de um processo consensual feito em cartório, o processo dura cerca
       de 24 horas. No caso de divórcio litigioso, a justiça decreta que não pode
       durar mais de 3 meses.
 
 
-      **Posso me divorciar mesmo se a outra parte não está de acordo?**\
+      **Posso me divorciar mesmo se a outra parte não está de acordo?**
 
       Sim. Mas nesse caso trata-se de um divórcio litigioso e deve ser dada
       entrada através da justiça.
 
 
-      **Como é feita a divisão de bens?**\
+      **Como é feita a divisão de bens?**
 
       Depende de qual regime de comunhão de bens escolhido pelo casal. O mais
       comum é a Comunhão Parcial de Bens. Nesse caso, só entram na divisão bens
       que foram adquiridos  após o casamento.
 
 
-      **Com quem fica a guarda dos filhos?**\
+      **Com quem fica a guarda dos filhos?**
 
       Depende. Se o casal estiver de acordo, as coisas andam mais rapidamente. O
       bem-estar do menor é sempre levado em conta. O caso mais comum é o de
@@ -167,7 +164,7 @@ sections:
       decidindo juntos sobre a criação.
 
 
-      **Quanto custa um divórcio?**\
+      **Quanto custa um divórcio?**
 
       O valor mínimo sugerido pela OAB/SP é de R$ 2.977,13 para o caso de
       divórcio em cartório, além das custas do próprio cartório. Contudo, fale
