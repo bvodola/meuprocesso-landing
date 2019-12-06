@@ -181,12 +181,14 @@ sections:
     header: Ainda tem alguma dúvida?
     numberedFeatures: false
     type: features
-  - type: formModal
-    formFields:
-      - id: Teste
-        name: Teste
-        type: text
-        placeholder: Teste
-        options:
-          - value: ""
+  - formFields:
+      - id: name
+        name: name
+        options: []
+        placeholder: Digite seu nome
+      - id: phone
+        name: phone
+        placeholder: DDD + Telefone
+    header: Falar com advogado
+    type: formModal
 ---
