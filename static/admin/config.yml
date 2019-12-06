@@ -195,6 +195,7 @@ collections:
                 fields:
                   - { label: ID, name: id, widget: string, required: false }
                   - { label: Name, name: name, widget: string, required: false }
+                  - { label: Type, name: type, widget: string, required: false }
                   - {
                       label: Placeholder,
                       name: placeholder,

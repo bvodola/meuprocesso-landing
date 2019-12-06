@@ -184,11 +184,15 @@ sections:
   - formFields:
       - id: name
         name: name
-        options: []
+        type: text
+        options:
+          - value: test
         placeholder: Digite seu nome
       - id: phone
         name: phone
+        type: tel
         placeholder: DDD + Telefone
+        options: []
     header: Falar com advogado
     type: formModal
 ---
