@@ -181,3 +181,37 @@ collections:
                   widget: text,
                   required: false,
                 }
+
+          #FORM MODAL
+          - label: "Form Modal"
+            name: "formModal"
+            widget: object
+            fields:
+              - { label: "Header", name: "header", widget: string }
+              - label: Form Fields
+                name: "formFields"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: ID, name: id, widget: string, required: false }
+                  - { label: Name, name: name, widget: string, required: false }
+                  - {
+                      label: Placeholder,
+                      name: placeholder,
+                      widget: string,
+                      required: false,
+                    }
+                  - label: Options
+                    name: options
+                    widget: list
+                    fields:
+                      - label: Value
+                        name: value
+                        widget: string
+                        required: false
+              - {
+                  label: "Custom CSS",
+                  name: customCSS,
+                  widget: text,
+                  required: false,
+                }

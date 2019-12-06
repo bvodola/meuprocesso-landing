@@ -3,6 +3,8 @@ import styled from "styled-components"
 import Markdown from "react-markdown"
 import Jumbotron, { JumbotronContent } from "./Jumbotron/Jumbotron"
 import Button from "./Button/Button"
+import Modal from "./Modal/Modal"
+import { Remarkable } from "remarkable"
 
 const MobileImage = styled.img`
   width: 200px;
@@ -181,16 +183,21 @@ const Section = props => {
     // TEXT
     // ====
     console.log(props.textContent)
+    const md = new Remarkable()
+    const createMarkup = markdown => ({
+      __html: md.render(markdown),
+    })
     return (
-      <Text customCSS={props.customCSS}>
-        <Markdown source={props.textContent} />
-      </Text>
+      <Text
+        customCSS={props.customCSS}
+        dangerouslySetInnerHTML={createMarkup(props.textContent)}
+      />
     )
-  } else if (type === "empty") {
-    // =====
-    // EMPTY
-    // =====
-    return <div>&nbsp;</div>
+  } else if (type === "formModal") {
+    // ==========
+    // FORM MODAL
+    // ==========
+    return <Modal isModalOpened={true} />
   } else {
     // ================
     // No section found

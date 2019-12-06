@@ -108,6 +108,15 @@ export const pageQuery = graphql`
             description
           }
           numberedFeatures
+          formFields {
+            id
+            name
+            type
+            placeholder
+            options {
+              value
+            }
+          }
         }
       }
     }
