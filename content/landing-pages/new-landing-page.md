@@ -16,7 +16,7 @@ sections:
       }
     desktopImage: /img/hero002.jpg
     header: |-
-      # Advogado de divórcio
+      # Advogados de divórcio
 
       Fale agora mesmo com um advogado especialista e saiba como podemos ajudar
     mobileImage: /img/airplane-ticket.png
