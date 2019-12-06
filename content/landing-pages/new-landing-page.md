@@ -1,6 +1,6 @@
 ---
 templateKey: landing-page
-title: Divórcio
+title: Meu Divórcio
 sections:
   - buttonColor: '#ec9314'
     buttonLink: 'https://youthful-davinci-a51b66.netlify.com/chat/'
