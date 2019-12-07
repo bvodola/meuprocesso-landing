@@ -1,7 +1,9 @@
 import React from "react"
 import Section from "../components/Section"
+import Form from "../components/Form/Form"
 import styled from "styled-components"
 import Nav from "../components/Nav/Nav"
+import StateHandler from "../helpers/stateHandler"
 
 const Layout = styled.div`
   margin: 0 20px;
@@ -27,11 +29,25 @@ const Layout = styled.div`
   }
 `
 
-export default props => {
-  let { sections } = props.data.markdownRemark.frontmatter
+class LandingPage extends React.Component {
+  constructor(props) {
+    super(props)
 
-  // Manipulate sectios in order to respect rows and columns
-  sections &&
+    let { sections } = props.data.markdownRemark.frontmatter
+    this.sections = this.generateSectionsGrid(sections)
+
+    this.state = {
+      form: {},
+      isModalOpened: false,
+    }
+
+    this.setFormValue = this.setFormValue.bind(this)
+    this.setModalState = this.setModalState.bind(this)
+  }
+
+  generateSectionsGrid(oldSections) {
+    const sections = JSON.parse(JSON.stringify(oldSections))
+
     sections.forEach((section, i) => {
       // If we are starting a grid section
       if (section.type === "grid") {
@@ -51,27 +67,55 @@ export default props => {
       }
     })
 
-  console.log(sections)
+    return sections
+  }
 
-  return (
-    <Layout>
-      <Nav
-        logo={"/img/meu-processo-logo.png"}
-        phone={"(11) 99469-5279"}
-        whatsapp={"11994695279"}
-      />
-      {sections &&
-        sections.map((section, i) => (
-          <Section
-            key={Math.random()
-              .toString(36)
-              .substring(7)}
-            {...section}
-          />
-        ))}
-    </Layout>
-  )
+  setFormValue(key, val) {
+    this.setState(state => {
+      return {
+        form: {
+          ...state.form,
+          [key]: val,
+        },
+      }
+    })
+  }
+
+  setModalState(isModalOpened) {
+    this.setState({ isModalOpened })
+  }
+
+  render() {
+    return (
+      <Layout>
+        {/* *** */}
+        {/* Nav */}
+        {/* *** */}
+        <Nav
+          logo={"/img/meu-processo-logo.png"}
+          phone={"(11) 99469-5279"}
+          whatsapp={"11994695279"}
+        />
+
+        {/* ******** */}
+        {/* Sections */}
+        {/* ******** */}
+        {this.sections &&
+          this.sections.map((section, i) => (
+            <Section
+              {...section}
+              form={this.state.form}
+              setFormValue={this.setFormValue}
+              isModalOpened={this.state.isModalOpened}
+              setModalState={this.setModalState}
+            />
+          ))}
+      </Layout>
+    )
+  }
 }
+
+export default LandingPage
 
 export const pageQuery = graphql`
   query LandingPageBySlug($slug: String!) {

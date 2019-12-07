@@ -1,10 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import Markdown from "react-markdown"
+import { Remarkable } from "remarkable"
+
 import Jumbotron, { JumbotronContent } from "./Jumbotron/Jumbotron"
 import Button from "./Button/Button"
 import Modal from "./Modal/Modal"
-import { Remarkable } from "remarkable"
+import Form from "./Form/Form"
 
 const MobileImage = styled.img`
   width: 200px;
@@ -125,7 +127,11 @@ const Section = props => {
       >
         <JumbotronContent className="jumbotron-content">
           <Markdown source={props.header} />
-          <Button href={props.buttonLink} buttonColor={props.buttonColor}>
+          <Button
+            href={props.buttonLink}
+            buttonColor={props.buttonColor}
+            openModal={() => props.setModalState(true)}
+          >
             {props.buttonText}
           </Button>
         </JumbotronContent>
@@ -151,7 +157,11 @@ const Section = props => {
         </Features>
 
         {props.buttonText && (
-          <Button variant={"outlined"} href={props.buttonLink}>
+          <Button
+            variant={"outlined"}
+            href={props.buttonLink}
+            openModal={() => props.setModalState(true)}
+          >
             {props.buttonText}
           </Button>
         )}
@@ -182,7 +192,6 @@ const Section = props => {
     // ====
     // TEXT
     // ====
-    console.log(props.textContent)
     const md = new Remarkable()
     const createMarkup = markdown => ({
       __html: md.render(markdown),
@@ -197,7 +206,21 @@ const Section = props => {
     // ==========
     // FORM MODAL
     // ==========
-    return <Modal isModalOpened={true} />
+    console.log("props.form", props.form)
+    return (
+      <Modal
+        isModalOpened={props.isModalOpened}
+        closeModal={() => props.setModalState(false)}
+      >
+        <div onClick={() => props.setModalState(false)}>Close</div>
+        <Form
+          form={props.form}
+          setFormValue={props.setFormValue}
+          header={props.header}
+          fields={props.formFields}
+        />
+      </Modal>
+    )
   } else {
     // ================
     // No section found
