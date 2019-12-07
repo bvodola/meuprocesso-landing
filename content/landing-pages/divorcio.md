@@ -22,7 +22,7 @@ sections:
     mobileImage: /img/airplane-ticket.png
     type: jumbotron
   - bgColor: '#fff'
-    buttonLink: 'http://www.google.com'
+    buttonLink: 'modal:lead-form'
     buttonText: Quero falar com um advogado
     description: Resolvemos seu divórcio em apenas 3 passos
     feature:
@@ -172,7 +172,7 @@ sections:
       conosco e com certeza podemos oferecer um proposta que cabe em seu
       orçamento.
     type: textEditor
-  - buttonLink: 'https://youthful-davinci-a51b66.netlify.com/chat'
+  - buttonLink: 'modal:lead-form'
     buttonText: Falar com um advogado
     description: >-
       Se restou qualquer dúvida, fale conosco agora mesmo por WhatsApp e com
