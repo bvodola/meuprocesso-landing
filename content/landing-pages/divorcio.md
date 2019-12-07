@@ -3,7 +3,7 @@ templateKey: landing-page
 title: Meu Divórcio
 sections:
   - buttonColor: '#ec9314'
-    buttonLink: 'https://youthful-davinci-a51b66.netlify.com/chat/'
+    buttonLink: 'modal:lead-form'
     buttonText: Falar com um advogado
     customCSS: |-
       border-bottom: none;
@@ -184,15 +184,15 @@ sections:
   - formFields:
       - id: name
         name: name
-        type: text
         options:
           - value: test
         placeholder: Digite seu nome
+        type: text
       - id: phone
         name: phone
-        type: tel
-        placeholder: DDD + Telefone
         options: []
+        placeholder: DDD + Telefone
+        type: tel
     header: Falar com advogado
     type: formModal
 ---
