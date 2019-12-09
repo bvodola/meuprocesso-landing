@@ -7,12 +7,7 @@ const received = (messages, firstMessageId = null) =>
     content,
     id: i === 0 ? firstMessageId : null,
   }))
-const sent = (messages, firstMessageId) =>
-  messages.map((content, i) => ({
-    type: "sent",
-    content,
-    id: i == 0 ? firstMessageId : null,
-  }))
+
 const question = (content, name, options) => [
   {
     type: "received",

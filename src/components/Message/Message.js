@@ -70,7 +70,7 @@ export default props => {
       <div className="message-form">
         {currentMessage === lastMessage ? (
           fields.map((field, i) =>
-            field.type == "text" ? (
+            field.type === "text" ? (
               <form
                 key={i}
                 onSubmit={ev => {
@@ -96,7 +96,7 @@ export default props => {
                   <button type="submit">OK</button>
                 )}
               </form>
-            ) : field.type == "options" ? (
+            ) : field.type === "options" ? (
               <div key={i}>
                 {field.options.map((option, i) => (
                   <button

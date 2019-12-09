@@ -191,7 +191,8 @@ sections:
         type: text
       - id: phone
         name: phone
-        options: []
+        options:
+          - value: none
         placeholder: DDD + Telefone
         type: tel
     form_id: form_divorcio

@@ -27,7 +27,7 @@ const sent = (messages, firstMessageId) =>
   messages.map((content, i) => ({
     type: "sent",
     content,
-    id: i == 0 ? firstMessageId : null,
+    id: i === 0 ? firstMessageId : null,
   }))
 
 const question = (content, name, options, messageId = null) => [
@@ -53,13 +53,6 @@ const question = (content, name, options, messageId = null) => [
 ]
 const yesOrNoQuestion = (content, name, messageId) =>
   question(content, name, ["Sim", "Não"], messageId)
-
-const _if = name => [
-  {
-    type: "if",
-    name,
-  },
-]
 
 const _switch = name => [
   {
@@ -251,6 +244,7 @@ class Chat extends React.Component {
               currentMessageIndex = i
               return true
             }
+            return false
           })
         }
       }
@@ -258,14 +252,14 @@ class Chat extends React.Component {
       currentMessage.key = currentMessageIndex
       const messages = [...this.state.messages, currentMessage]
 
-      console.log(currentMessage)
-
       this.setState({ messages, lastMessage: currentMessageIndex })
       window.scrollTo(0, document.body.scrollHeight)
 
-      this.state.timeout = setTimeout(() => {
-        if (currentMessage.type !== "form") this.sendQueuedMessages()
-      }, this.props.messageInterval || 1000)
+      this.setState({
+        timeout: setTimeout(() => {
+          if (currentMessage.type !== "form") this.sendQueuedMessages()
+        }, this.props.messageInterval || 1000),
+      })
     }
   }
 
@@ -296,7 +290,7 @@ class Chat extends React.Component {
     let messageIndex, lastMessage
 
     messages.forEach((msg, i) => {
-      if (msg.key == messageKey) {
+      if (msg.key === messageKey) {
         messageIndex = i
         lastMessage = messageKey
       }
@@ -376,7 +370,7 @@ class Chat extends React.Component {
                 {message.content}
               </Message>
 
-              {message.key == lastMessage &&
+              {message.key === lastMessage &&
                 message.type !== "form" &&
                 !message.last && (
                   <Message key={`typing${i}`} type="received">

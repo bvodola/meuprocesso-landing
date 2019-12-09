@@ -98,7 +98,7 @@ class LandingPage extends React.Component {
     // Empty form state
     this.setState(state => {
       let emptyForm = {}
-      Object.keys(this.state.form).map(key => {
+      Object.keys(this.state.form).forEach(key => {
         emptyForm[key] = ""
       })
       state.form = emptyForm

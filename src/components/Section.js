@@ -8,13 +8,6 @@ import Button from "./Button/Button"
 import Modal from "./Modal/Modal"
 import Form from "./Form/Form"
 
-const MobileImage = styled.img`
-  width: 200px;
-  @media (min-width: 700px) {
-    display: none;
-  }
-`
-
 const Text = styled.div`
   margin: 20px;
   ${props => props.customCSS}

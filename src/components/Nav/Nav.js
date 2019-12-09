@@ -14,6 +14,7 @@ export default ({ logo, logoHref, phone, whatsapp, ...props }) => (
       {whatsapp && (
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href={`http://api.whatsapp.com/send?phone=55${whatsapp}`}
         >
           <img className="whatsapp" src="/img/whatsapp.png" alt="" />
