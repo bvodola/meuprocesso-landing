@@ -181,12 +181,11 @@ sections:
     header: Ainda tem alguma dúvida?
     numberedFeatures: false
     type: features
-  - emails_to_send: 'bvodola@gmail.com,thi.vod@gmail.com'
+  - emails_to_send: bvodola@gmail.com
     formFields:
       - id: name
         name: name
-        options:
-          - value: test
+        options: []
         placeholder: Digite seu nome
         type: text
       - id: phone
