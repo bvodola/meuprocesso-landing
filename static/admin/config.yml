@@ -230,6 +230,7 @@ collections:
                     }
                   - label: Options
                     name: options
+                    required: false
                     widget: list
                     fields:
                       - label: Value
