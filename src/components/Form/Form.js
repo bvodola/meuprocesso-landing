@@ -30,12 +30,26 @@ const FormButton = styled(Button)`
 `
 
 const Form = props => {
-  const { form, setFormValue, header, fields } = props
+  const {
+    form,
+    setFormValue,
+    header,
+    formFields,
+    handleFormSubmit,
+    emails_to_send,
+    submit_text,
+    form_id,
+  } = props
   console.log("form", form)
+
+  const formData = {
+    ...form,
+    to: emails_to_send,
+  }
   return (
-    <StyledForm>
+    <StyledForm id={form_id} onSubmit={ev => handleFormSubmit(ev, formData)}>
       <H1>{header}</H1>
-      {fields.map(field => (
+      {formFields.map(field => (
         <Input
           id={field.id}
           key={field.id}
@@ -46,7 +60,7 @@ const Form = props => {
           value={form[field.name]}
         />
       ))}
-      <FormButton>Enviar</FormButton>
+      <FormButton>{submit_text}</FormButton>
     </StyledForm>
   )
 }

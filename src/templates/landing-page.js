@@ -1,9 +1,8 @@
 import React from "react"
+import axios from "axios"
 import Section from "../components/Section"
-import Form from "../components/Form/Form"
 import styled from "styled-components"
 import Nav from "../components/Nav/Nav"
-import StateHandler from "../helpers/stateHandler"
 
 const Layout = styled.div`
   margin: 0 20px;
@@ -43,6 +42,7 @@ class LandingPage extends React.Component {
 
     this.setFormValue = this.setFormValue.bind(this)
     this.setModalState = this.setModalState.bind(this)
+    this.handleFormSubmit = this.handleFormSubmit.bind(this)
   }
 
   generateSectionsGrid(oldSections) {
@@ -85,6 +85,17 @@ class LandingPage extends React.Component {
     this.setState({ isModalOpened })
   }
 
+  async handleFormSubmit(ev, formData) {
+    ev.preventDefault()
+    const BACKEND_URL = "https://www.leadmaster.com.br"
+    await axios.post(BACKEND_URL + "/api/mail/send/", {
+      from: "leads@meuprocesso.com.br",
+      to: formData.to,
+      subject: "Lead Divórcio",
+      text: `Nome: ${formData.name}, Telefone: ${formData.phone}`,
+    })
+  }
+
   render() {
     return (
       <Layout>
@@ -108,6 +119,7 @@ class LandingPage extends React.Component {
               setFormValue={this.setFormValue}
               isModalOpened={this.state.isModalOpened}
               setModalState={this.setModalState}
+              handleFormSubmit={this.handleFormSubmit}
             />
           ))}
       </Layout>
@@ -157,6 +169,7 @@ export const pageQuery = graphql`
           emails_to_send
           post_endpoint
           post_endpoint_auth_header
+          redirect_after_submit
           formFields {
             id
             name

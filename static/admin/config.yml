@@ -208,6 +208,12 @@ collections:
                   widget: string,
                   required: false,
                 }
+              - {
+                  label: "Redirect after submit",
+                  name: "redirect_after_submit",
+                  widget: string,
+                  required: false,
+                }
               - label: Form Fields
                 name: "formFields"
                 widget: "list"

@@ -199,5 +199,6 @@ sections:
     post_endpoint: "http://www.google.com"
     post_endpoint_auth_header: asdf
     submit_text: Falar com advogado agora
+    redirect_after_submit: ""
     type: formModal
 ---
