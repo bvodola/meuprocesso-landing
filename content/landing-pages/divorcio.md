@@ -181,7 +181,8 @@ sections:
     header: Ainda tem alguma dúvida?
     numberedFeatures: false
     type: features
-  - formFields:
+  - emails_to_send: 'bvodola@gmail.com,thi.vod@gmail.com'
+    formFields:
       - id: name
         name: name
         options:
@@ -193,7 +194,11 @@ sections:
         options: []
         placeholder: DDD + Telefone
         type: tel
+    form_id: form_divorcio
     header: Falar com advogado
+    post_endpoint: 'http://www.google.com'
+    post_endpoint_auth_header: asdf
+    submit_text: Falar com advogado agora
     type: formModal
 ---
 
