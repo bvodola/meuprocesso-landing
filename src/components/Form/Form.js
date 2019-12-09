@@ -60,6 +60,7 @@ const Form = props => {
       <H1>{header}</H1>
       {formFields.map(field => (
         <Input
+          required
           id={field.id}
           key={field.id}
           type={field.type}
