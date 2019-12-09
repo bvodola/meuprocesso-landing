@@ -94,6 +94,16 @@ class LandingPage extends React.Component {
       subject: "Lead Divórcio",
       text: `Nome: ${formData.name}, Telefone: ${formData.phone}`,
     })
+
+    // Empty form state
+    this.setState(state => {
+      let emptyForm = {}
+      Object.keys(this.state.form).map(key => {
+        emptyForm[key] = ""
+      })
+      state.form = emptyForm
+      return state
+    })
   }
 
   render() {

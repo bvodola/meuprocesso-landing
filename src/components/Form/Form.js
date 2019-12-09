@@ -42,13 +42,14 @@ const Form = props => {
     redirect_after_submit,
   } = props
 
-  const formData = {
+  const dataToSubmit = {
     ...form,
     to: emails_to_send,
   }
 
   const handleSubmit = async ev => {
-    await handleFormSubmit(ev, formData)
+    ev.preventDefault()
+    await handleFormSubmit(ev, dataToSubmit)
     if (redirect_after_submit) {
       window.location.href = redirect_after_submit
     }

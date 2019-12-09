@@ -2,8 +2,8 @@
 templateKey: landing-page
 title: Meu Divórcio
 sections:
-  - buttonColor: '#ec9314'
-    buttonLink: 'modal:lead-form'
+  - buttonColor: "#ec9314"
+    buttonLink: "modal:lead-form"
     buttonText: Falar com um advogado
     customCSS: |-
       border-bottom: none;
@@ -21,8 +21,8 @@ sections:
       Fale agora mesmo com um advogado especialista e saiba como podemos ajudar
     mobileImage: /img/airplane-ticket.png
     type: jumbotron
-  - bgColor: '#fff'
-    buttonLink: 'modal:lead-form'
+  - bgColor: "#fff"
+    buttonLink: "modal:lead-form"
     buttonText: Quero falar com um advogado
     description: Resolvemos seu divórcio em apenas 3 passos
     feature:
@@ -31,7 +31,7 @@ sections:
           indenização.
         image: /img/airplane-ticket.png
         title: Verifique seus direitos
-      - description: 'Cadastre o seu pedido online, sem sair de casa, em apenas 5 minutos.'
+      - description: "Cadastre o seu pedido online, sem sair de casa, em apenas 5 minutos."
         image: /img/smartphone.png
         title: Reivindique online
       - description: Nós cuidamos de toda a burocracia e você recebe o seu dinheiro.
@@ -57,10 +57,10 @@ sections:
     imageHeight: 70px
     numberedFeatures: true
     type: features
-  - bgColor: '#eee'
-    buttonLink: ''
-    buttonText: ''
-    description: ''
+  - bgColor: "#eee"
+    buttonLink: ""
+    buttonText: ""
+    description: ""
     features:
       - description: >-
           Damos todo auxílio para os casos em que o cartório pode ser feito em
@@ -86,10 +86,10 @@ sections:
     imageHeight: 70px
     numberedFeatures: false
     type: features
-  - customCSS: 'text-align: center;'
-    textContent: '# Perguntas Frequentes'
+  - customCSS: "text-align: center;"
+    textContent: "# Perguntas Frequentes"
     type: textEditor
-  - bgColor: '#fff'
+  - bgColor: "#fff"
     grid: 2
     gridSize: 2
     lgPadding: 20px 20%
@@ -172,7 +172,7 @@ sections:
       conosco e com certeza podemos oferecer um proposta que cabe em seu
       orçamento.
     type: textEditor
-  - buttonLink: 'modal:lead-form'
+  - buttonLink: "modal:lead-form"
     buttonText: Falar com um advogado
     description: >-
       Se restou qualquer dúvida, fale conosco agora mesmo por WhatsApp e com
@@ -185,7 +185,8 @@ sections:
     formFields:
       - id: name
         name: name
-        options: []
+        options:
+          - value: none
         placeholder: Digite seu nome
         type: text
       - id: phone
@@ -195,10 +196,9 @@ sections:
         type: tel
     form_id: form_divorcio
     header: Falar com advogado
-    post_endpoint: ''
-    post_endpoint_auth_header: ''
-    redirect_after_submit: 'https://wa.me/5511963197881'
+    post_endpoint: ""
+    post_endpoint_auth_header: ""
+    redirect_after_submit: "https://wa.me/5511963197881"
     submit_text: Falar com advogado agora
     type: formModal
 ---
-

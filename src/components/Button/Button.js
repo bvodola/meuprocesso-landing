@@ -1,7 +1,7 @@
 import React from "React"
 import styled from "styled-components"
 
-const StyledButton = styled.a`
+const StyledButton = styled.button`
   background-color: ${props =>
     props.variant === "outlined" ? "#fff" : props.buttonColor};
   color: ${props =>
@@ -15,7 +15,7 @@ const StyledButton = styled.a`
 
 const Button = props => {
   let href = props.href
-  let onClick = () => {}
+  let onClick = null
   if (href.substr(0, 6) === "modal:") {
     href = "#"
     onClick = ev => {

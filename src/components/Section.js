@@ -206,7 +206,6 @@ const Section = props => {
     // ==========
     // FORM MODAL
     // ==========
-    console.log("props.form", props.form)
     return (
       <Modal
         isModalOpened={props.isModalOpened}
