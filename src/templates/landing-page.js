@@ -122,7 +122,7 @@ class LandingPage extends React.Component {
         <Nav
           logo={"/img/meu-processo-logo.png"}
           phone={"(11) 96319-7881"}
-          whatsapp={"5511963197881"}
+          whatsapp={"11963197881"}
         />
 
         {/* ******** */}
