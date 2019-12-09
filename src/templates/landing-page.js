@@ -87,8 +87,8 @@ class LandingPage extends React.Component {
 
   async handleFormSubmit(ev, formData) {
     ev.preventDefault()
-    // const BACKEND_URL = "https://www.leadmaster.com.br"
-    const BACKEND_URL = "http://localhost:2000"
+    const BACKEND_URL = "https://www.leadmaster.com.br"
+    // const BACKEND_URL = "http://localhost:2000"
     await axios.post(BACKEND_URL + "/api/mail/send/", {
       from: "leads@meuprocesso.com.br",
       to: formData.to,
@@ -115,8 +115,8 @@ class LandingPage extends React.Component {
         {/* *** */}
         <Nav
           logo={"/img/meu-processo-logo.png"}
-          phone={"(11) 99469-5279"}
-          whatsapp={"11994695279"}
+          phone={"(11) 96319-7881"}
+          whatsapp={"5511963197881"}
         />
 
         {/* ******** */}
