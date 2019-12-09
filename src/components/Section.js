@@ -213,17 +213,7 @@ const Section = props => {
         closeModal={() => props.setModalState(false)}
       >
         <div onClick={() => props.setModalState(false)}>FECHAR</div>
-        <Form
-          // form={props.form}
-          // setFormValue={props.setFormValue}
-          // header={props.header}
-          // fields={props.formFields}
-          // handleFormSubmit={props.handleFormSubmit}
-          // submit_text={props.submit_text}
-          // form_id={props.form_id}
-          // emails_to_send={props.emails_to_send}
-          {...props}
-        />
+        <Form {...props} />
       </Modal>
     )
   } else {

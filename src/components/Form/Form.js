@@ -39,15 +39,23 @@ const Form = props => {
     emails_to_send,
     submit_text,
     form_id,
+    redirect_after_submit,
   } = props
-  console.log("form", form)
 
   const formData = {
     ...form,
     to: emails_to_send,
   }
+
+  const handleSubmit = async ev => {
+    await handleFormSubmit(ev, formData)
+    if (redirect_after_submit) {
+      window.location.href = redirect_after_submit
+    }
+  }
+
   return (
-    <StyledForm id={form_id} onSubmit={ev => handleFormSubmit(ev, formData)}>
+    <StyledForm id={form_id} onSubmit={handleSubmit}>
       <H1>{header}</H1>
       {formFields.map(field => (
         <Input
