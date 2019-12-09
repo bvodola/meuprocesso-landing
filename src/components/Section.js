@@ -212,7 +212,7 @@ const Section = props => {
         isModalOpened={props.isModalOpened}
         closeModal={() => props.setModalState(false)}
       >
-        <div onClick={() => props.setModalState(false)}>Close</div>
+        <div onClick={() => props.setModalState(false)}>FECHAR</div>
         <Form
           form={props.form}
           setFormValue={props.setFormValue}

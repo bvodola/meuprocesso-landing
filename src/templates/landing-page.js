@@ -152,6 +152,11 @@ export const pageQuery = graphql`
             description
           }
           numberedFeatures
+          form_id
+          submit_text
+          emails_to_send
+          post_endpoint
+          post_endpoint_auth_header
           formFields {
             id
             name

@@ -18,9 +18,17 @@ const Button = props => {
   let onClick = () => {}
   if (href.substr(0, 6) === "modal:") {
     href = "#"
-    onClick = props.openModal
+    onClick = ev => {
+      ev.preventDefault()
+      props.openModal()
+    }
   }
   return <StyledButton {...props} href={href} onClick={onClick} />
+}
+
+Button.defaultProps = {
+  href: "",
+  buttonColor: "#28a745",
 }
 
 export default Button

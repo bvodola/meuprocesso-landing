@@ -74,7 +74,7 @@ Modal.defaultProps = {
   closeModal: () => {},
   children: null,
   style: {},
-  width: "60%",
+  width: "50%",
   showOverlay: true,
 }
 

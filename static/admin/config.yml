@@ -187,7 +187,27 @@ collections:
             name: "formModal"
             widget: object
             fields:
+              - { label: "Form ID", name: "form_id", widget: string }
               - { label: "Header", name: "header", widget: string }
+              - { label: "Submit Text", name: "submit_text", widget: string }
+              - {
+                  label: "Emails to send",
+                  name: "emails_to_send",
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: "POST Endpoint",
+                  name: "post_endpoint",
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: "POST Endpoint Auth Header",
+                  name: "post_endpoint_auth_header",
+                  widget: string,
+                  required: false,
+                }
               - label: Form Fields
                 name: "formFields"
                 widget: "list"
