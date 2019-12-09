@@ -36,6 +36,7 @@ const Form = props => {
     header,
     formFields,
     handleFormSubmit,
+    isFormLoading,
     emails_to_send,
     submit_text,
     form_id,
@@ -70,7 +71,9 @@ const Form = props => {
           value={form[field.name]}
         />
       ))}
-      <FormButton>{submit_text}</FormButton>
+      <FormButton disabled={isFormLoading}>
+        {isFormLoading ? "Carregando..." : submit_text}
+      </FormButton>
     </StyledForm>
   )
 }

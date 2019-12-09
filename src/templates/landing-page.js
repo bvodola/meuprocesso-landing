@@ -86,25 +86,31 @@ class LandingPage extends React.Component {
   }
 
   async handleFormSubmit(ev, formData) {
-    ev.preventDefault()
-    const BACKEND_URL = "https://www.leadmaster.com.br"
-    // const BACKEND_URL = "http://localhost:2000"
-    await axios.post(BACKEND_URL + "/api/mail/send/", {
-      from: "leads@meuprocesso.com.br",
-      to: formData.to,
-      subject: "Lead Divórcio",
-      text: `Nome: ${formData.name}, Telefone: ${formData.phone}`,
-    })
-
-    // Empty form state
-    this.setState(state => {
-      let emptyForm = {}
-      Object.keys(this.state.form).forEach(key => {
-        emptyForm[key] = ""
+    try {
+      ev.preventDefault()
+      this.setState({ isFormLoading: true })
+      const BACKEND_URL = "https://www.leadmaster.com.br"
+      // const BACKEND_URL = "http://localhost:2000"
+      await axios.post(BACKEND_URL + "/api/mail/send/", {
+        from: "leads@meuprocesso.com.br",
+        to: formData.to,
+        subject: "Lead Divórcio",
+        text: `Nome: ${formData.name}, Telefone: ${formData.phone}`,
       })
-      state.form = emptyForm
-      return state
-    })
+
+      // Empty form state
+      this.setState(state => {
+        let emptyForm = {}
+        Object.keys(this.state.form).forEach(key => {
+          emptyForm[key] = ""
+        })
+        state.isFormLoading = false
+        state.form = emptyForm
+        return state
+      })
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   render() {
@@ -130,6 +136,7 @@ class LandingPage extends React.Component {
               setFormValue={this.setFormValue}
               isModalOpened={this.state.isModalOpened}
               setModalState={this.setModalState}
+              isFormLoading={this.state.isFormLoading}
               handleFormSubmit={this.handleFormSubmit}
             />
           ))}

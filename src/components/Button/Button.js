@@ -8,6 +8,7 @@ const StyledButton = styled.button`
     props.variant === "outlined" ? props.buttonColor : "#fff"};
   border: 1px solid ${props => props.buttonColor};
   border-radius: ${props => (props.variant === "outlined" ? "30px" : "4px")};
+  opacity: ${props => (props.disabled ? "0.5" : "1")};
   padding: 15px 20px;
   cursor: pointer;
   box-shadow: none;
