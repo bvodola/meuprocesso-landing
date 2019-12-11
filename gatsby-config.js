@@ -91,5 +91,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    // Google Tag Manger
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-MSW4VXV",
+        includeInDevelopment: true,
+        defaultDataLayer: null,
+      },
+    },
   ],
 }
