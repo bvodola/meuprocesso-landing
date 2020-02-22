@@ -15,7 +15,7 @@ const StyledButton = styled.button`
 `
 
 const Button = props => {
-  let href = props.href
+  let href = props.href || ""
   let onClick = null
   if (href.substr(0, 6) === "modal:") {
     href = "#"
